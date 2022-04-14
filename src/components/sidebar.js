@@ -13,7 +13,7 @@ const Sidebar = () => {
         <div className={`sidebar ${inactive ? "inactive":""}`}>
            
             <div>
-                <a href="">Home</a>
+               <p>ac</p> <a href="">Home</a>
             </div>
             <div>
                 <a href="">Mentor</a>

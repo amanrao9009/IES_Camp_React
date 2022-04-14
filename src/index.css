@@ -349,7 +349,7 @@ nav{
 
 }
 
-.inactive div{
+.inactive div a{
   display: none;
 }
 
