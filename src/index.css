@@ -1,0 +1,480 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #EFEDFB;
+
+
+}
+
+/* hamberger Menu start*/
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* hamberger Menu start*/
+
+
+
+
+/* login / signUp start */
+
+.wrapper{
+  background-color: #DDFFF7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.main{
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: row;
+
+  /* border-radius: 25px; */
+
+}
+.content{
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content:space-between;
+  border-radius: 25px 0 0 25px;
+
+  padding: 45px 65px ;
+  
+
+
+  
+}
+.sideshow{
+  width: 400px;
+
+  background-color: #1AEAB5;
+
+  border-radius:0 25px 25px 0;
+
+
+}
+
+.form{
+ min-height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items:flex-start;
+}
+
+.socials{
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.d2{
+  border: 1px solid rgb(206, 206, 206);
+  width: 90%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.d2 div{
+  
+  font-size:16px;
+  margin: -15px 0 0 10px;
+  width: fit-content;
+  padding: 0 10px ;
+  background-color: white;
+}
+
+.d2 div p{
+  
+ color: rgb(102, 102, 102);
+}
+
+.d2 input{
+  outline: none;
+  border-style: hidden;
+
+  width: 80%;
+  
+  padding: 0 0 0 20px;
+  margin: 5px 0 10px 5px;
+
+}
+
+.d2 img{
+  margin-left: 20px;
+  
+}
+
+.form button{
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1AEAB5;
+  border-style: none;
+   width: 90%;
+   height: 50px;
+   margin-bottom: 20px;
+}
+
+.devi,.socials{
+  align-self:center;
+}
+.socials{
+  width: 100%;
+
+  margin: 15px 0;
+
+  display: flex;
+  justify-content:center;
+
+}
+
+.socials div{
+  cursor: pointer;
+
+  margin: 0 20px;
+
+  border-radius: 7px;
+  padding:  7px 35px;
+  box-shadow: #10420921 0px 1px 1px, #10420921 0px 0px 1px 1px;
+}
+
+.socials div img{
+  margin-top: 4px;
+}
+
+.title h2{
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+}
+
+.title p{
+
+  color: rgb(105, 105, 105);
+
+  font-size: 14px;
+
+  font-weight: 400;
+  margin-bottom: 10px;
+
+}
+
+.d1 p{
+  font-size: 14px;
+  color:grey;
+}
+
+
+/* signup loging end */
+
+
+
+
+/* nav bar start */
+
+nav{
+  
+  
+  background-color: #1AEAB5;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+    height: 50px;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.leftnav,.rightnav{
+
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin: 10px 20px;
+
+}
+
+.leftnav h3{
+
+  margin:0 20px;
+
+}
+
+.leftnav img{
+
+  margin:0 20px 0 0;
+
+}
+
+.leftnav div{
+
+  margin:0 20px;
+
+}
+
+.rightnav img{
+  margin: 0 20px 0 0;
+}
+
+
+/* nav bar end */
+
+
+/* page content */
+
+.pagecontent{
+  display: flex;
+  height: 100vh;
+  overflow-y:scroll;
+  padding-bottom: 45px;
+  
+}
+
+.hamburger{
+  cursor: pointer;
+ position: fixed;
+ margin-top: 15px;
+ margin-left: 10px;
+}
+
+.sidebar{
+  margin-top: 50px;
+  padding-top: 15px;
+  width: 200px;
+  background-color: #252434;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:inherit;
+  position: fixed;
+  transition: width .2s ease-in;
+
+
+}
+
+.sidebar div {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.sidebar div a{
+  text-decoration: none;
+  color: white;
+  align-self: center;
+
+
+  
+}
+
+.inactive{
+
+  width: 55px;
+
+}
+
+.inactive div{
+  display: none;
+}
+
+
+.panel{
+  margin-left: 60px;
+  width: 100%;
+  margin-top: 50px;
+  
+
+}
+
+.annouce ,.mails{
+  border: 1px solid #cbcee8;
+  box-shadow: 0 12px 11px -3px rgb(113 126 195 / 25%);
+  height: 50%;
+  margin: 12px;
+  
+  background-color: #ffff;
+  border-radius: 5px;
+}
+
+.heading{
+  border-bottom: 1px solid #cbcee8 ;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.heading h3{
+  margin-left: 10px;
+  font-weight: 300;
+  
+}
+
+/* responsive for main pages  */
+
+/* 
+@media screen and (max-width: 570px) {
+
+
+
+.leftnav h3{
+  display: none;
+}
+
+ .sidebar{
+   display: none;
+ }
+
+ .panel{
+   margin-left: 0;
+ }
+} */
+
+
+
+/* responsive below 913px  signup login*/
+@media screen and (max-width: 913px) {
+
+
+  .sideshow{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+
+  
+  .content{
+
+   
+
+    align-self: center;
+    border-radius: 25px;
+
+    max-width:fit-content;
+    
+
+
+  }
+
+  .d2 img{
+    display: none;
+  }
+
+}
+
+
+/* responsive  phone signup login*/
+@media screen and (max-width: 400px) {
+
+  html { overflow-y: hidden; }
+
+
+  .wrapper{
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    
+  }
+
+
+  .main{
+    
+    box-shadow: none;
+  }
+
+
+
+  .content{
+
+   
+
+    align-self: center;
+    border-radius: 25px;
+    
+
+
+  }
+
+
+  .sideshow{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+ 
+}
