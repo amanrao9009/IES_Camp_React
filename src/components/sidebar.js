@@ -60,7 +60,7 @@ const Sidebar = () => {
                    <p><BiMessageSquareError/></p> <a href="">Correction</a>
                 </div>
                 <div>
-                  <p><BiCommentDetail/></p>  <a href="">Suggestion</a>
+                  <p><BiCommentDetail/></p>  <a href="./queries">Suggestion</a>
                 </div>
                 </IconContext.Provider>
             </div></>

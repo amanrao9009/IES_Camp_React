@@ -69,7 +69,7 @@ const AdminBar = () => {
                    <p><BiMessageSquareError/></p> <a href="">Correction</a>
                 </div>
                 <div>
-                  <p><BiCommentDetail/></p>  <a href="">Suggestion</a>
+                  <p><BiCommentDetail/></p>  <a href="./queries">Suggestion</a>
                 </div>
                 </IconContext.Provider>
             </div>
@@ -79,7 +79,7 @@ const AdminBar = () => {
 
             <div className={`Student_form_wrap  ${form ? "form_off" : ""}`}>
              
-              <form action="">
+              <form className="formAdmin" action="">
                 <section><AiOutlineCloseCircle onClick={()=>formOn(!form)}  style={{fontSize:"30px"}}/></section>
                 <h2>Fill Student Information</h2>
                 <div><p>Name of Student :</p><input type="text" name="" id="" /></div>
@@ -95,7 +95,7 @@ const AdminBar = () => {
             {/* Mentor Form */}
             <div className={`Student_form_wrap  ${Mform ? "form_off_Mentor" : ""} `}>
              
-             <form action="">
+             <form className="formAdmin" action="">
                <section><AiOutlineCloseCircle onClick={()=>MformOn(!Mform)}  style={{fontSize:"30px"}}/></section>
                <h2>Fill Mentor Information</h2>
                <div><p>Name of Student :</p><input type="text" name="" id="" /></div>

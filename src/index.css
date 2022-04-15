@@ -510,6 +510,17 @@ nav{
   
 }
 
+
+/* Saggetion page */
+.sg_box{
+  background-color:#e2dcd3 ;
+  margin-top: 50px;
+  margin-left: 55px;
+  width: 100vw;
+  height:100vh;
+  
+}
+
 /* responsive for main pages  */
 
 /* 

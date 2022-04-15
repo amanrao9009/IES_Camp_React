@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import SignUp from './SignIn';
 import Student from './Student';
 import Admin from './Admin';
+import Suggestion from './Suggestion';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
           <Route path="/student" element={<Student />} />
           <Route path="/" element={<SignUp/>} />
           <Route path="/admin" element={<Admin/>} />
+          <Route path="/queries" element={<Suggestion/>} />
+
         </Routes>
       </Router>
       
