@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { FaChalkboardTeacher} from 'react-icons/fa';
 import {  MdOutlineDashboard,MdOutlineStickyNote2 } from 'react-icons/md';
@@ -60,7 +61,7 @@ const Sidebar = () => {
                    <p><BiMessageSquareError/></p> <a href="">Correction</a>
                 </div>
                 <div>
-                  <p><BiCommentDetail/></p>  <a href="./queries">Suggestion</a>
+                  <p><BiCommentDetail/></p>  <Link to="/queries">Suggestion</Link>
                 </div>
                 </IconContext.Provider>
             </div></>

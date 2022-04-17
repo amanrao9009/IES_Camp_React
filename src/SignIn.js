@@ -42,8 +42,8 @@ const SignUp = () => {
                                 <img src="./media/logo/password.png" alt="" />
                             </div>
 
-                            
-                                <button >Login </button>
+                            <Link to="/student"> <button >Login </button></Link>
+                               
                            
 
                             <div className="devi">
