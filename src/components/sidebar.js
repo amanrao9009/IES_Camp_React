@@ -18,8 +18,8 @@ import { Squash as Hamburger } from 'hamburger-react'
 
 
 const Sidebar = () => {
-    const [inactive, setInactive] = useState(false);
-    const [isOpen, setOpen] = useState(true)
+    const [inactive, setInactive] = useState(true);
+    const [isOpen, setOpen] = useState(false)
 
     return (
 
